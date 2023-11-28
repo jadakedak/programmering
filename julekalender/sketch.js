@@ -27,22 +27,14 @@ class låge{
         this.imagePath = imagepath;
 
         this.Cover = document.createElement("div")
-            this.Cover.style.position = "absolute";
+            this.Cover.id = "Cover"
             this.Cover.style.width = `${lågewidth}px`
             this.Cover.style.height = `${lågeHeight}px`
-            this.Cover.style.top = "18px"; 
-            this.Cover.style.left = "0";
-            this.Cover.style.backgroundColor = "red"
-            this.Cover.style.zIndex = "2";
 
         this.Container = document.createElement("div");
-            this.Container.style.position = "relative"
-            this.Container.style.backgroundColor = "lightblue"
-            this.Container.style.borderRadius = "10px"
+            this.Container.id = "Låge-Container"
             this.Container.style.width = `${lågewidth}px`
             this.Container.style.height = `${lågeHeight}px`
-            this.Container.style.marginLeft = "10px"
-            this.Container.style.textAlign = "center";
 
         this.Label = document.createElement("label");
             this.Label.textContent = this.label;
@@ -77,8 +69,8 @@ class låge{
 let objects = [];
 let count = 1;
 
-for(let y = 0; 500 > y; y += lågeHeight){
-    for(let x = 0; 500 > x; x += lågewidth){
+for(let y = 0; 1000 > y; y += lågeHeight){
+    for(let x = 0; 1000 > x; x += lågewidth){
         if(count >= 25){
             // do nothing
         }else{
