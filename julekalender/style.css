@@ -1,0 +1,15 @@
+#Cover{
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    background-color: red;
+    z-index: 2;
+}
+
+#Låge-Container{
+    position: relative;
+    background-color: lightblue;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
