@@ -63,6 +63,11 @@ class låge{
                 this.Container.appendChild(this.Cover)
             }
         })
+
+        this.Container.addEventListener("mouseover", () => {
+            this.Container.style.width = lågeWidth + 25
+            this.Container.style.height = ``lågeHeight + 25
+        })
     }
 }
 
