@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="Drawing-Canvas" width="1000" height="600"></canvas>
+    <div id="canvas-settings">
+        <input type="color" id="canvas-background-color">
+        <button id="submit-color">apply</button>
+    </div>
+
+    <div id="Side-Panel" style="border: 2px solid black; width:250px; height:700px;">
+        <div id="Menu-Selection">
+            <button id="Shapes-Menu-Button">Shapes</button>
+            <button id="Pencils-Menu-Button">Pencils</button>
+        </div>
+        <div id="Shapes">
+            <h1 style="text-align: center;">Shapes</h1>
+            <div id="shapes-container">
+
+                <div class="Shape" id="square-shape">
+                    <div class="shape-preview"></div>
+                </div>
+                <input type="range" min="4" max="100" value="20" class="slider" id="Shape-Size">
+                <p class="slider-values">Square Size: <span id="Square-Size-Display"></span></p>
+
+                <br>
+                <div class="Shape" id="circle-shape">
+                    <div class="shape-preview" style="border-radius: 30px;"></div>
+                </div>
+                <input type="range" min="4" max="100" value="20" class="slider" id="Circle-Size">
+                <p class="slider-values">Circle Size: <span id="Circle-Size-Display"></span></p>
+                
+                <input id="Color" type="color"><br><br>
+                <button id="clear-shapes">Clear Shapes</button>
+            </div>
+        </div>
+
+        <div id="Pencils">
+            <h1 style="text-align: center;">Pencils</h1>
+            <div id="pencils-cotainer">
+                <div class="pencil" id="normal-pencil">
+                    <div id="normal-pencil-preview"></div>
+                </div>
+
+                <div class="pencil" id="delete-pencil">
+                    <div id="delete-pencil-preview">Erase</div>
+                </div>
+
+                <input type="range" min="4" max="100" value="20" class="slider" id="pencil-thickness">
+                <p class="slider-values">pencil thickness: <span id="pencil-thickness-display"></span></p>
+
+                
+
+                <input id="pencil-color" type="color"><br><br>
+                <button id="clear-lines">Clear lines</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="main.js"></script>
+    <script src="sliders.js"></script>
+    <script src="pencil.js"></script>
+    <script defer src="shape.js"></script>
+</body>
+</html>

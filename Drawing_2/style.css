@@ -1,0 +1,113 @@
+body{
+    background-color: lightgrey;
+}
+
+
+#Drawing-Canvas{
+    border: 2px solid black;
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%, -50%);
+}
+
+#clear-shapes{
+    width: 100px;
+    height: 35px;
+    border:none;
+    background-color: darkgrey;
+    color: black;
+    cursor:pointer;
+}
+#clear-shapes:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+.Shape{
+    position:relative; 
+    left: 5%; 
+    border: 2px solid black; 
+    width: 80px; 
+    background-color: grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.Shape:hover{
+    background-color: rgb(167, 167, 167);
+}
+.shape-preview{
+    border:none;
+    width:50px;
+    height:50px; 
+    background-color: lightgrey;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slider{
+    margin-left: 12px;
+}
+
+.slider-values{
+    margin-left: 12px;
+}
+
+
+
+#normal-pencil{
+    position:relative; 
+    left: 5%; 
+    border: 2px solid black; 
+    width: 50px; 
+    background-color: grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#normal-pencil:hover{
+    background-color: rgb(176, 176, 176);
+}
+
+#normal-pencil-preview{
+    width:20px; 
+    height:20px; 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border:none; 
+    border-radius: 30px; 
+    background-color: lightgrey;
+}
+
+
+
+
+#delete-pencil{
+    position:relative; 
+    left: 5%; 
+    border: 2px solid black; 
+    width: 50px; 
+    background-color: grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#delete-pencil:hover{
+    background-color: rgb(176, 176, 176);
+}
+#delete-pencil-preview{
+    margin: 15px;
+}
+
+
+#clear-lines{
+    width: 100px;
+    height: 35px;
+    border:none;
+    background-color: darkgrey;
+    color: black;
+    cursor:pointer;
+}
+#clear-lines:hover{
+    background-color: rgb(197, 197, 197);
+}
