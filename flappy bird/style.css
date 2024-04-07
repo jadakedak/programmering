@@ -1,0 +1,47 @@
+#game{
+    position:absolute; 
+    top:0%;
+    left:30%;
+    border:2px solid black;
+    z-index: 0;
+}
+
+#start_screen{
+    display: block;
+    background-color: green;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+#death_screen{
+    display: none;
+    background-color: red;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+
+#start_screen, #death_screen{
+    position: absolute;
+    top:43.3%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.start_game{
+    position: relative;
+    top:35%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    height: 50px;
+    border:none;
+    background-color: brown;
+    color: white;
+}
+.start_game:hover{
+    background-color: rgb(166, 68, 68);
+}
