@@ -1,0 +1,4 @@
+- live opdatering af filer
+- Settings Vindue
+- live opdateret settings
+  

@@ -1,0 +1,196 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background-color: rgb(74, 74, 74);
+}
+
+
+.shortcuts{
+  position: absolute;
+  left:0%;
+  top: 5%;
+  border: 2px solid black;
+  width: 170px;
+  height: 500px;
+}
+
+#Delete-File-Button{
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: rgb(220, 87, 87);
+}
+
+#New-Folder-Button, #New-File-Button{
+  margin-top: 12px;
+  margin-left: 5px;
+  width: 80px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(165, 184, 216);
+}
+#New-Folder-Button:hover, #New-File-Button:hover{
+  background-color: rgb(138, 166, 215);
+}
+
+#submitInput, #submitInput_2{
+  width: 170px;
+}
+#cancelInput, #cancelInput_2{
+  width: 170px;
+}
+
+#inputDialog, #inputDialog_2 {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  width:170px;
+  height:160px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index: 4;
+}
+
+#explorer{
+  position:absolute;
+  top: 18%;
+  left: 20%;
+}
+
+.tool-bar{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(154, 154, 154);
+  width: 99%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#shortcuts{
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 120px;
+  height: 400px;
+  border: 2px solid black;
+}
+
+
+
+#Drive-Object-Container{
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(227, 229, 229);
+  user-select: none;
+  border: 10px solid transparent;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 2;
+}
+
+#Drive-Object-Container:hover{
+  background-color: darkgrey;
+}
+
+#files-container{
+  max-height: 380px;
+  overflow: auto;
+}
+
+#reload{
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+#File-Object-Container{
+  position: relative;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  font-size: 12px;
+  font: bold;
+  color: rgb(216, 213, 213);
+  margin-bottom: 3px;
+  z-index: 2;
+}
+
+#File-Object-Container:hover{
+  background-color: rgb(133, 133, 133);
+}
+
+#File-Object-Name{
+  user-select: none;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: 20%;
+}
+
+#File-Object-Size{
+  position: relative;
+  font-size: 10px;
+}
+
+#Shortcut-Container{
+  cursor: pointer;
+  height: 30px;
+  text-align: center;
+  border: none;
+  z-index: 4;
+  background-color: lightgrey;
+  margin-bottom: 15px;
+}
+
+#Shortcut-Container:hover{
+  background-color: darkgrey;
+  transition:ease;
+}
+
+
+
+#go-back {
+  display: flex;
+  height: 2em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #fff;
+}
+
+
+ 
+#go-back > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+ 
+#go-back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+ 
+#go-back:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
