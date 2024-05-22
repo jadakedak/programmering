@@ -166,14 +166,13 @@ class FileObj{
         this.Container.appendChild(this.FileOrDirImage)
         this.Container.appendChild(this.FilenameLabel)
 
-        if(this.isfile){
-            this.FilesizeLabel = document.createElement("label");
-            this.FilesizeLabel.style.userSelect = "none"
-            this.FilesizeLabel.id = "File-Object-Size"
-            this.FilesizeLabel.textContent = this.size + " kb"
-            this.Container.appendChild(this.FilesizeLabel)
-        }
-
+        //if(this.isfile){
+        //    this.FilesizeLabel = document.createElement("label");
+        //    this.FilesizeLabel.style.userSelect = "none"
+        //    this.FilesizeLabel.id = "File-Object-Size"
+        //    this.FilesizeLabel.textContent = this.size + " kb"
+        //    this.Container.appendChild(this.FilesizeLabel)
+        // }
         filesContainer.appendChild(this.Container)
     }
 }
